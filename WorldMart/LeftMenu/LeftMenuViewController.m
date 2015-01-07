@@ -163,7 +163,7 @@
 			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"Categories"];
 			break;
         case 2:
-			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"LoginController"];
+			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"OrderViewController"];
 			break;
 		case 3:
 			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"LoginController"];

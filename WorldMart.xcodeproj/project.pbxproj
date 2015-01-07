@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		18091F5B1A5DB9C400558C92 /* cartBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 18091F5A1A5DB9C400558C92 /* cartBtn.png */; };
 		C912E28A1A5DD271004CC224 /* YourAccountController.m in Sources */ = {isa = PBXBuildFile; fileRef = C912E2891A5DD271004CC224 /* YourAccountController.m */; };
+		C912E28D1A5DDDE4004CC224 /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C912E28C1A5DDDE4004CC224 /* OrderViewController.m */; };
 		C9B98D951A5CD08500A0D4BB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B98D941A5CD08500A0D4BB /* main.m */; };
 		C9B98D981A5CD08500A0D4BB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B98D971A5CD08500A0D4BB /* AppDelegate.m */; };
 		C9B98D9B1A5CD08600A0D4BB /* WorldMart.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9B98D991A5CD08600A0D4BB /* WorldMart.xcdatamodeld */; };
@@ -133,6 +134,8 @@
 		18091F5A1A5DB9C400558C92 /* cartBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cartBtn.png; sourceTree = "<group>"; };
 		C912E2881A5DD271004CC224 /* YourAccountController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YourAccountController.h; sourceTree = "<group>"; };
 		C912E2891A5DD271004CC224 /* YourAccountController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YourAccountController.m; sourceTree = "<group>"; };
+		C912E28B1A5DDDE4004CC224 /* OrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
+		C912E28C1A5DDDE4004CC224 /* OrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
 		C9B98D8F1A5CD08500A0D4BB /* WorldMart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldMart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B98D931A5CD08500A0D4BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C9B98D941A5CD08500A0D4BB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -345,6 +348,10 @@
 				C9B98D9D1A5CD08600A0D4BB /* ViewController.m */,
 				C9B98E701A5CD6F600A0D4BB /* LoginController.h */,
 				C9B98E711A5CD6F600A0D4BB /* LoginController.m */,
+				C912E2881A5DD271004CC224 /* YourAccountController.h */,
+				C912E2891A5DD271004CC224 /* YourAccountController.m */,
+				C912E28B1A5DDDE4004CC224 /* OrderViewController.h */,
+				C912E28C1A5DDDE4004CC224 /* OrderViewController.m */,
 				C9B98E7B1A5CE47B00A0D4BB /* RegistrationController.h */,
 				C9B98E7C1A5CE47C00A0D4BB /* RegistrationController.m */,
 				C9B98EC51A5D211200A0D4BB /* ProductDetailController.h */,
@@ -356,8 +363,6 @@
 				C9B98DA41A5CD08600A0D4BB /* LaunchScreen.xib */,
 				C9B98D991A5CD08600A0D4BB /* WorldMart.xcdatamodeld */,
 				C9B98D921A5CD08500A0D4BB /* Supporting Files */,
-				C912E2881A5DD271004CC224 /* YourAccountController.h */,
-				C912E2891A5DD271004CC224 /* YourAccountController.m */,
 			);
 			path = WorldMart;
 			sourceTree = "<group>";
@@ -852,6 +857,7 @@
 				C9B98E041A5CD0BF00A0D4BB /* SBJsonBase.m in Sources */,
 				C9B98EC41A5D18D300A0D4BB /* Categories.m in Sources */,
 				C9B98E931A5CE9B600A0D4BB /* ActionSheetDistancePicker.m in Sources */,
+				C912E28D1A5DDDE4004CC224 /* OrderViewController.m in Sources */,
 				C9B98E0B1A5CD0BF00A0D4BB /* SlideNavigationContorllerAnimatorSlide.m in Sources */,
 				C9B98E071A5CD0BF00A0D4BB /* Reachability.m in Sources */,
 				C9B98E0A1A5CD0BF00A0D4BB /* SlideNavigationContorllerAnimatorScaleAndFade.m in Sources */,

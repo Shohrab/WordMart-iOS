@@ -25,9 +25,7 @@
     if ((self = [super init]))
     {
         userCart = [[NSMutableArray alloc]init];
-        
     }
-    
     return self;
 }
 
@@ -64,15 +62,6 @@
     return _default;
 }
 
-//@synthesize userAddress;
-//@synthesize userCompanyName;
-//@synthesize userEmail;
-//@synthesize userFirstName;
-//@synthesize userId;
-//@synthesize userLastName;
-//@synthesize userLicenseNo;
-//@synthesize userType;
-//@synthesize userCart;
 
 - (void) encodeWithCoder:(NSCoder *)encoder
 {

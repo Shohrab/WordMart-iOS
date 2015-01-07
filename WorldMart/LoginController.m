@@ -23,12 +23,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.txtEmail.text=@"uurtsaikha@yahoo.com";
     self.txtPassword.text=@"uuree";
     self.txtEmail.delegate=self;
     self.txtPassword.delegate=self;
     self.txtPassword.secureTextEntry=YES;
-    // Do any additional setup after loading the view.
+  
 }
 
 - (void)didReceiveMemoryWarning {
@@ -107,13 +108,13 @@
             
         }
         
-       // [NSKeyedArchiver archiveRootObject:userinfoObj toFile:@"userdata"];
+    // [NSKeyedArchiver archiveRootObject:userinfoObj toFile:@"userdata"];
         NSData *encodedObject = [NSKeyedArchiver archivedDataWithRootObject:userinfoObj];
       [[NSUserDefaults standardUserDefaults] setObject:encodedObject forKey:@"userdata"];
         
     
         
-            [MBProgressHUD hideHUDForView:self.view animated:YES];
+        [MBProgressHUD hideHUDForView:self.view animated:YES];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);

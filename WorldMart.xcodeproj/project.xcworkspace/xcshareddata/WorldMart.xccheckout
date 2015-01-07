@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>522B84B3-31D9-4287-86B0-3C6D3DC19BE1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>WorldMart</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E1AF6799F4349BB145CB0DBDFE36312FB6DC05DF</key>
+		<string>https://github.com/Shohrab/WordMart-iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>WorldMart.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>E1AF6799F4349BB145CB0DBDFE36312FB6DC05DF</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Shohrab/WordMart-iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E1AF6799F4349BB145CB0DBDFE36312FB6DC05DF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E1AF6799F4349BB145CB0DBDFE36312FB6DC05DF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>WordMart-iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>

@@ -32,6 +32,20 @@
     return (AppDelegate*)[[UIApplication sharedApplication] delegate];
     
 }
+- (void)resetDefaults {
+    NSUserDefaults * defs = [NSUserDefaults standardUserDefaults];
+    NSDictionary * dict = [defs dictionaryRepresentation];
+    for (id key in dict) {;
+        
+        NSLog(@"Selected key=%@",key);
+        if ([key isEqualToString:@"token"]) {
+            
+        }else
+            [defs removeObjectForKey:key];
+    }
+    [defs synchronize];
+}
+
 - (UIColor *) colorFromHexString:(NSString *)hexString {
     NSString *cleanString = [hexString stringByReplacingOccurrencesOfString:@"#" withString:@""];
     if([cleanString length] == 3) {
@@ -96,10 +110,10 @@
     
     
     
-    NSData *info=[[NSUserDefaults standardUserDefaults] objectForKey:@"userdata"];
-    UserInfo *someFoo = [NSKeyedUnarchiver unarchiveObjectWithData:info];
+    NSDictionary *info=[[NSUserDefaults standardUserDefaults] objectForKey:@"userdata"];
+    ///UserInfo *someFoo = [NSKeyedUnarchiver unarchiveObjectWithData:info];
     
-    NSLog(@"Infos-%@",someFoo.userType);
+    NSLog(@"Infos-%@",info);
     return YES;
 }
 

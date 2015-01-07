@@ -55,10 +55,15 @@
     
 }
 
--(void)viewDidAppear:(BOOL)animated{
-
+-(void)viewDidAppear:(BOOL)animated {
     
+    NSDictionary *info=[[NSUserDefaults standardUserDefaults] objectForKey:@"userdata"];
+//    if ([[info valueForKey:@"usertype"] isEqualToString:@"vendor"])
+//    {
+//    self.menuItems=[[NSMutableArray alloc] initWithObjects:@"My Product",@"Payment",@"MyProduct",@"My Account",@"About",@"FAQ",@"Contact Us", nil];
+//    }else{
     self.menuItems = [[NSMutableArray alloc] initWithObjects:@"Home",@"Shop by Department",@"Your Order",@"Your Account",@"About",@"FAQ",@"Contact US", nil];
+   // }
     [self.tableView reloadData];
 
 }
@@ -166,17 +171,26 @@
 			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"OrderViewController"];
 			break;
 		case 3:
+            
+            if (![[NSUserDefaults standardUserDefaults] boolForKey:@"firstLaunch"])
+            {
+              vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"YourAccountController"];
+            }else{
 			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"LoginController"];
+            }
 			break;
         
         case 4:
-			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"TeacherRating"];
+			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"ViewController"];
 			break;
             
         case 5:
-			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"SellABook"];
+			vc = [mainStoryboard instantiateViewControllerWithIdentifier: @"ViewController"];
 			break;
 	
+            
+    /// self.menuItems=[[NSMutableArray alloc] initWithObjects:@"Categories",@"OrderViewController",@"My Account",@"About",@"FAQ",@"Contact Us", nil];
+    // self.menuItems = [[NSMutableArray alloc] initWithObjects:@"Home",@"Shop by Department",@"Your Order",@"Your Account",@"About",@"FAQ",@"Contact US", nil];
         case 6:
             [self.tableView deselectRowAtIndexPath:[self.tableView indexPathForSelectedRow] animated:YES];
             [[SlideNavigationController sharedInstance] popToRootViewControllerAnimated:YES];
@@ -198,7 +212,7 @@
 															 withSlideOutAnimation:self.slideOutAnimationEnabled
 																	 andCompletion:^{
                                                                          
-                                                                         
+                                         [tableView deselectRowAtIndexPath:indexPath animated:YES];                                    
                                                                      
                                                                      }];
 }

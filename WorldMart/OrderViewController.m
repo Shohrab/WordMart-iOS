@@ -56,7 +56,7 @@
     
     NSLog(@"Input %@",[self InputDataString]);
     
-    NSString *requestingLocationUrl = [NSString stringWithFormat:@"categorylist"] ;
+    NSString *requestingLocationUrl = [NSString stringWithFormat:@"orderlist"] ;
     
     AFHTTPClient *httpClient = [[AFHTTPClient alloc] initWithBaseURL:[NSURL URLWithString:MainServices]];
     [httpClient setParameterEncoding:AFJSONParameterEncoding];
@@ -70,7 +70,7 @@
         NSDictionary *temp = [[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding] JSONValue];
         
         
-        NSLog(@"Order Response-%@",temp);
+        NSLog(@"Order Response-%@",[[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding]);
         
         if ([[temp valueForKey:@"success"] intValue]) {
             

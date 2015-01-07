@@ -23,7 +23,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.title=@"Login";
     self.txtEmail.text=@"uurtsaikha@yahoo.com";
     self.txtPassword.text=@"uuree";
     self.txtEmail.delegate=self;
@@ -104,15 +104,20 @@
                 [userinfoObj setUserLicenseNo:[userInfo valueForKey:@"license_number"]];
                 [userinfoObj setUserCompanyName:[userInfo valueForKey:@"company_name"]];
             }
+                [[NSUserDefaults standardUserDefaults] setBool:NO forKey:@"firstLaunch"];
+            [[NSUserDefaults standardUserDefaults] setObject:userInfo forKey:@"userdata"];
             
             
+            YourAccountController *vc = [self.storyboard instantiateViewControllerWithIdentifier: @"YourAccountController"];
+            
+            [self.navigationController pushViewController:vc animated:YES];
         }
         
     // [NSKeyedArchiver archiveRootObject:userinfoObj toFile:@"userdata"];
-        NSData *encodedObject = [NSKeyedArchiver archivedDataWithRootObject:userinfoObj];
-      [[NSUserDefaults standardUserDefaults] setObject:encodedObject forKey:@"userdata"];
+     //   NSData *encodedObject = [NSKeyedArchiver archivedDataWithRootObject:userinfoObj];
+      
         
-    
+
         
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         
@@ -135,5 +140,13 @@
     // Pass the selected object to the new view controller.
 }
 */
+- (BOOL)slideNavigationControllerShouldDisplayLeftMenu
+{
+     return YES;
+}
 
+- (BOOL)slideNavigationControllerShouldDisplayRightMenu
+{
+    return NO;
+}
 @end

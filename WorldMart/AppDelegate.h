@@ -16,6 +16,7 @@
 #import "ProductDetailController.h"
 #import "ViewController.h"
 #import "LoginController.h"
+#import "YourAccountController.h"
 #import "OrderViewController.h"
 #define MainServices @"http://54.169.94.38:8080/mycompanyAPI/service/"
 
@@ -31,7 +32,7 @@
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 
-
+- (void)resetDefaults;
 + (AppDelegate*)shareDelegate;
 - (void)customAlert:(NSString*)title1 withMessage:(NSString*)message;
 - (UIColor *) colorFromHexString:(NSString *)hexString;

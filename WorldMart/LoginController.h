@@ -7,8 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface LoginController : UIViewController<UITextFieldDelegate>
+#import "SlideNavigationController.h"
+@interface LoginController : UIViewController<UITextFieldDelegate,SlideNavigationControllerDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *txtEmail;
 @property (weak, nonatomic) IBOutlet UITextField *txtPassword;
 

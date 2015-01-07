@@ -84,6 +84,29 @@
             </objects>
             <point key="canvasLocation" x="794" y="314"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="InX-YB-hKp">
+            <objects>
+                <viewController id="tjJ-LS-r7P" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BoZ-Vf-kPN"/>
+                        <viewControllerLayoutGuide type="bottom" id="GCd-58-20w"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jG9-53-dF5">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="etu-a3-HQI">
+                                <rect key="frame" x="0.0" y="42" width="320" height="141"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d8h-9j-gJG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="980" y="927"/>
+        </scene>
         <!--Categories-->
         <scene sceneID="kKZ-ma-QiY">
             <objects>
@@ -363,15 +386,50 @@
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MhZ-QU-let">
+                                        <rect key="frame" x="8" y="315" width="304" height="47"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="License" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f5K-Is-SbV">
+                                                <rect key="frame" x="7" y="9" width="290" height="30"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bw7-o6-ObG">
+                                        <rect key="frame" x="8" y="364" width="304" height="47"/>
+                                        <subviews>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Company" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NAi-Bf-aDM">
+                                                <rect key="frame" x="7" y="9" width="290" height="30"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" red="0.80603289840000003" green="0.80768882720000001" blue="0.77121127810000001" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="MainScrollView" destination="OQI-Zb-X50" id="U0M-Vx-v2q"/>
+                        <outlet property="txtAddress" destination="HYY-oC-g7W" id="rFA-eE-ZvO"/>
+                        <outlet property="txtCompany" destination="NAi-Bf-aDM" id="Itm-co-j6d"/>
+                        <outlet property="txtEmailAddress" destination="mkB-J8-TjI" id="fJ3-jo-tZn"/>
+                        <outlet property="txtFirstName" destination="iUy-r8-AR9" id="4r4-wu-2KU"/>
+                        <outlet property="txtLastName" destination="dz6-Xk-bj9" id="Bmh-AD-gqJ"/>
+                        <outlet property="txtLicense" destination="f5K-Is-SbV" id="AgP-kA-8ol"/>
+                        <outlet property="txtPassword" destination="sii-Hp-xuC" id="sAV-yB-hbx"/>
+                        <outlet property="txtState" destination="S3X-ut-L7C" id="Va0-HE-GiU"/>
+                        <outlet property="txtUserType" destination="M1f-Xl-eTa" id="EfP-vK-E9N"/>
+                        <outlet property="txtZip" destination="gBo-mB-95a" id="lOh-SN-tac"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3gp-rb-c7v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="601" y="-1208"/>
+            <point key="canvasLocation" x="517" y="-1359"/>
         </scene>
         <!--Registration Controller-->
         <scene sceneID="eWu-Wh-1lT">

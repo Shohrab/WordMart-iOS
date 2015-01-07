@@ -95,7 +95,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "81"
             endingLineNumber = "81"
-            landmarkName = "-LoadProductListRequest"
+            landmarkName = "-InputDataString"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -111,7 +111,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "121"
             endingLineNumber = "121"
-            landmarkName = "-tableView:cellForRowAtIndexPath:"
+            landmarkName = "-LoadProductListRequest"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
